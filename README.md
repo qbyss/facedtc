@@ -17,7 +17,7 @@ python .\frames_extractor.py  --start 40:00 --stop 41:42  --directory "frames"  
 ```
 That will extract a frame every 0.5s starting from 40:00 minutes in the film to 41:42. Meaning it will extract 84 frames.
 
-## Using the face detection feature : 
+Using the face detection feature : 
 ```batch
 python .\frames_extractor.py  --start 1:00:00 --stop 1:08:00  --directory "frames-faces" --face-only --face-size 150 --detection-quality 5 --interval 1 movie.mkv
 ```
