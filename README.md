@@ -25,4 +25,4 @@ That will extract a frame every second from 1hour in the movie to 1h08 but will 
 
 ---
 
-*prompt_helper_guy.py* : It will open a GUI window and will ask you to choose a directory. It will let you create a txt file for each pictures in that directory. The idea is to write the prompts press enter and then load the next pictures. The previous prompt is stored in the clipboard for faster typing.
+*prompt_helper_gui.py* : It will open a GUI window and will ask you to choose a directory. It will let you create a txt file for each pictures in that directory. The idea is to write the prompts press enter and then load the next pictures. The previous prompt is stored in the clipboard for faster typing.
