@@ -22,3 +22,7 @@ Using the face detection feature :
 python .\frames_extractor.py  --start 1:00:00 --stop 1:08:00  --directory "frames-faces" --face-only --face-size 150 --detection-quality 5 --interval 1 movie.mkv
 ```
 That will extract a frame every second from 1hour in the movie to 1h08 but will discard them if there is no face detected in it. face-size specify the minimum face size in pixels and detection quality will impact the detection tolerance, higher will yield less result but of better quality.
+
+---
+
+*prompt_helper_guy.py* : It will open a GUI window and will ask you to choose a directory. It will let you create a txt file for each pictures in that directory. The idea is to write the prompts press enter and then load the next pictures. The previous prompt is stored in the clipboard for faster typing.
