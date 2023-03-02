@@ -1,6 +1,7 @@
 import argparse
 import cv2
 import time
+import os
 from tqdm import tqdm
 
 def parse_time(time_str):
@@ -120,7 +121,12 @@ if __name__ == "__main__":
     parser.add_argument("--detection-quality", type=int, default=5, help="Face detection quality, higher is better quality. (default=5)")
     parser.add_argument("--directory", type=str, default=".", help="Directory where the captures will be placed.")
     parser.add_argument("--face-only", action="store_true", help="Extract only frames with a face.")
+
     args = parser.parse_args()
+
+    if not os.path.exists(args.directory) and args.directory != '.':
+        os.makedirs(args.directory)
+
     start_time = parse_time(args.start)
     end_time = parse_time(args.stop)
     if args.face_only:
